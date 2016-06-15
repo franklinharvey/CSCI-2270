@@ -1,0 +1,24 @@
+notes
+
+
+terminal:
+./a.out messageBoard.txt
+
+char *argv[]
+
+char[] = {'a','b'}
+
+array of character arrays is basically an array of strings
+
+pointers point to a place in memory
+
+g++ lecture\ 2.cpp -o command
+	compiles as name "command"
+./command
+	runs
+
+make txt in terminal:
+	vi (name).txt
+		file
+
+	vi or vim (research)

@@ -1,0 +1,27 @@
+fstream helps to open read and write file
+sstream helps to treat a string as a stream of characters
+
+create an instance:
+	ifstream inFile;
+open a file:
+	inFile.open("filename.txt")
+
+create a stringstream variable from string data:
+	initialize the "ss" with data
+		stringstream ss(data);
+
+struct is a collection of data elements grouped together to create a composite data type
+creating a struct type: template to define all instances
+	struct CarData{
+	string model;
+	string make;
+	int year;
+	}
+
+array of structs
+structs can also be used as the type of an array, just like int or string or bool
+	CarData carArray[10];
+	for (int i=0;i<10;i++){
+		cout<<carArray[i].make<<carArray[i].model<<carArray[i].year<<endl;
+	}
+

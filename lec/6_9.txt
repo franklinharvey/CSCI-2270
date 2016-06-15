@@ -1,0 +1,23 @@
+Linked Lists
+
+arrays->fixed size->doubling alg if full
+	pointers to refer to elements
+
+2 types
+	single
+	double
+
+searching
+	search(value)
+			tmp=head
+			returnNode->NULL
+			found=false
+		while(!found and tmp!=NULL) //hasn't been found and you're not at the end
+			if tmp.value == value
+				found = true
+				returnNode=tmp
+			else
+				tmp=tmp.next
+		return returnNode
+
+

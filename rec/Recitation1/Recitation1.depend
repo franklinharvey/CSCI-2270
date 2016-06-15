@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1464989968 source:/home/user/Dropbox/2270/rec/Recitation1/main.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+

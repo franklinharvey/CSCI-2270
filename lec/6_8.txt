@@ -1,0 +1,17 @@
+class
+	what do I want to know about it
+	what do i want it to do
+	header file is whats in a class
+	source file is what the methods are
+
+in #include
+	<> means look in cpp
+	"" means look in project
+
+destructor
+	means of wiping from memory
+	most useful when allocated on heap
+	automatically called
+
+getters return values
+setters set values

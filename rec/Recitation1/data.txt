@@ -1,0 +1,14 @@
+12 24, orange
+23,, 56
+dog, true
+
+returns:
+	12 24, orange
+	12
+	24,
+	23 56
+	23
+	56
+	dog true
+	dog
+	true

@@ -1,0 +1,61 @@
+Stack
+	where local variables are stored
+	limited space
+	memory is managed, but variables cannot be resized
+	can run out of memory (stack overflow)
+
+Heap
+	free memory
+	much larger than a stack
+	used for storing variables declared dynamically
+	variables declared to stack MUST be deallocated
+	must be accessed through a pointer
+	no limit to memory
+	slower access, memory must be managed by programmer
+
+Array Doubling
+	used to increase size of an array when it is full
+	used in heap
+		creates new array at double the size, and copies info.
+
+int size=2;
+int *p=new int[size]; //"new" puts it on the heap
+int p[size]; //array on stack
+p[0]=1;
+p[1]=2; //array now full
+p=new int[size*2]; //creates memory leak DO NOT DO
+int *p2=new int[size*2];
+p2[0]=p[0];
+p2[1]=p[1]; //copies
+//now deallocate p
+delete[]p; //pointer doesn't point to anything, but pointer stays (its on the stack)
+p2[2]=3;
+p2[3]=4;
+size = size*2; //now 4
+p=new int[size*2]; //use original pointer
+p[0]=p2[0];
+p[1]=p2[1];
+p[2]=p2[2];
+p[3]=p2[3];
+delete[]p2;
+
+2D Array on the heap
+	//dynamically allocated
+	double *x = new double[10];
+	string *y=new string[20];
+
+	//2d arrays
+	int rows=3;
+	int columns=9;
+	int **z=new int*[rows]
+
+	for (int i=0;i<rows;i++){
+		z[i]=new int[columns];
+	}
+
+
+
+
+
+
+

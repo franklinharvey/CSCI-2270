@@ -1,0 +1,6 @@
+chicken, for sale, 3600
+dresser, for sale, 2800
+dresser, wanted, 800
+bike, for sale, 500
+bike, wanted, 3200
+microwave, for sale, 7400
