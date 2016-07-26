@@ -29,11 +29,11 @@ int main(int argc, char *argv[]) {
 		emptySaleItem.type = "\0";
 		emptySaleItem.itemStatus = 2;
 		emptySaleItem.price = 0;
-	
+
 	for (int r=0; r<100; r++){ //clears array
-		itemArray[r] = emptySaleItem;	
+		itemArray[r] = emptySaleItem;
 	}
-	
+
 	if (argc==2){ //checks for argument
 
 		ifstream inFile;
@@ -42,7 +42,7 @@ int main(int argc, char *argv[]) {
 
 		if (inFile.good()){ //file open error check
 			//cout<<"opened successfully"<<endl;
-			
+
 			while (getline(inFile, data)) { //read / get every line of the file & store it
 				counter++;
 				string token;
@@ -69,7 +69,7 @@ int main(int argc, char *argv[]) {
 				}
 				bool writeCheck = true;
 				for (int i=0;i<index;i++){
-					counter++;	
+					counter++;
 					if (indexItem.itemStatus==0){ //check for sale
 						if (indexItem.price<=itemArray[i].price){ //check price
 							if (indexItem.itemStatus!=itemArray[i].itemStatus){ //check opposite status
@@ -79,7 +79,7 @@ int main(int argc, char *argv[]) {
 									indexItem = emptySaleItem;
 									writeCheck = false;
 									break;
-								}					
+								}
 							}
 						}
 					}
@@ -100,7 +100,7 @@ int main(int argc, char *argv[]) {
 				if (writeCheck == true){
 					itemArray[index]=indexItem;
 					index++;
-				}				
+				}
 				ss.clear();
 			}
 			/*for (int i=0;i<100;i++){
@@ -112,7 +112,7 @@ int main(int argc, char *argv[]) {
 		else {
 			//cout<<"File unsuccessfully opened"<<endl;
 		}
-		
+
 		for (int i=0;i<index;i++){
 			counter++;
 			if (itemArray[i].itemStatus==2){

@@ -1,0 +1,13 @@
+int exp(x,n)
+{
+	if (n>0){
+		x = x * exp(x,n-1);
+	}
+	else {
+		return x;
+	}
+}
+
+int main(argv[]){
+	return exp(argv[1],argv[2]);
+}

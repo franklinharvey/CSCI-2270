@@ -57,6 +57,7 @@ std::string dequeue(){
 		head=head->next;
 		queueSize--;
 		return n;
+		
 	}
 	else {
 		std::cout<<"Queue is empty"<<std::endl;
